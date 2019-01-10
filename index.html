@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Audio Playlist</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="css/normalize.css">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Barlow:400,500,700">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.css">
+</head>
+<body>
+<section class="wrapper">
+    <div class="player">
+        <h3 class="player__current-track">Various Artist</h3>
+        <audio src="audio/Track-1.mp3" class="player__audio" controls>
+        </audio>
+        <ul class="player__list">
+            <li class="player__item">
+                <div class="player__track">Track 1</div>
+                <button class="player__btn" data-src="audio/Track-1.mp3"><i class="fa fa-play" aria-hidden="true"></i>
+                </button>
+            </li>
+            <li class="player__item">
+                <div class="player__track">Track 2</div>
+                <button class="player__btn" data-src="audio/Track-2.mp3"><i class="fa fa-play" aria-hidden="true"></i>
+                </button>
+            </li>
+            <li class="player__item">
+                <div class="player__track">Track 3</div>
+                <button class="player__btn" data-src="audio/Track-3.mp3"><i class="fa fa-play" aria-hidden="true"></i>
+                </button>
+            </li>
+        </ul>
+    </div>
+</section>
+<script src="js/main.js">
+</script>
+</body>
+</html>
+
+

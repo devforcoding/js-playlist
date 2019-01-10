@@ -1,0 +1,47 @@
+body {
+  margin: 0;
+  background-color: #333333;
+  font-size: 1.6rem;
+  font-family: "Barlow", sans-serif;
+}
+
+.wrapper {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+.player {
+  color: #ffffff;
+  display: grid;
+  grid-template-rows: 40px 60px 80px;
+  min-width: 300px;
+}
+.player__current-track {
+  margin: 0;
+  text-align: center;
+  font-size: 32px;
+}
+.player__list {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  overflow-y: auto;
+}
+.player__item {
+  display: flex;
+  justify-content: space-between;
+}
+.player__item--active {
+  justify-content: center;
+}
+.player__item--active .player__track {
+  font-weight: 800;
+  margin: 10px 0;
+}
+.player__item--active .player__btn {
+  display: none;
+}
+
+/*# sourceMappingURL=style.css.map */

@@ -1,0 +1,57 @@
+
+body {
+    margin: 0;
+    background-color: #333333;
+    font-size: 1.6rem;
+    font-family: 'Barlow', sans-serif;
+}
+
+.wrapper {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+.player {
+    color: #ffffff;
+    display: grid;
+    grid-template-rows: 40px 60px 80px;
+    min-width: 300px;
+
+    &__current-track {
+        margin: 0;
+        text-align: center;
+        font-size: 32px;
+    }
+
+    &__list {
+        list-style: none;
+        padding: 0;
+        margin: 0;
+        overflow-y: auto;
+    }
+
+    &__item {
+        display: flex;
+        justify-content: space-between;
+
+        &--active {
+            justify-content: center;
+
+            .player__track {
+                font-weight: 800;
+                margin: 10px 0;
+
+            }
+
+            .player__btn {
+                display: none;
+            }
+
+
+        }
+    }
+
+
+}
